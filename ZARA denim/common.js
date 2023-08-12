@@ -1,0 +1,9 @@
+jQuery(document).ready(function(){
+    $(".menu-li").mouseover(function(){
+        $(this).find(".sub-menu-ul").stop().fadeIn(500);
+        $(".menu-bg").stop().fadeIn(400);
+    }).mouseout(function(){
+        $(this).find(".sub-menu-ul").stop().fadeOut(500);
+        $(".menu-bg").stop().fadeOut(500);
+    });
+});
