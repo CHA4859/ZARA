@@ -9,22 +9,22 @@ jQuery(document).ready(function(){
 });
 
 
-$(".slide-li").hide();
-$(".slide-li:first-child").show();
+// $(".slide-li").hide()
+// $(".slide-li:first-child").show()
 
-setInterval(function(){
-    $(".slide-li:first-child").fadeIn()
-    .next().fadeOut().end(300)
-    .appendTo(".slide-ul");
-},4000);
+// setInterval(function(){
+//     $(".slide-li:first-child").fadeOut()
+//     .next().fadeIn().end(300)
+//     .appendTo(".slide-ul");
+// },3000);
 
-$(".slide").mouseover(function(){
-    $(".slide-arrow2").stop().fadeIn(200);
-    $(".slide-arrow1").stop().fadeIn(200);
-}).mouseout(function(){
-    $(".slide-arrow2").stop().fadeOut(200);
-    $(".slide-arrow1").stop().fadeOut(200);
-})
+// $(".slide").mouseover(function(){
+//     $(".slide-arrow2").stop().fadeIn(200);
+//     $(".slide-arrow1").stop().fadeIn(200);
+// }).mouseout(function(){
+//     $(".slide-arrow2").stop().fadeOut(200);
+//     $(".slide-arrow1").stop().fadeOut(200);
+// })
 
 
 const $wrap = $(".wrap");
